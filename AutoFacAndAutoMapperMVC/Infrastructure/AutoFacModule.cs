@@ -12,7 +12,7 @@ namespace AutoFacAndAutoMapperMVC.Infrastructure
                 //Register Mapper Profile
                 cfg.AddProfile<AutoMapperProfile>();
             }
-            )).AsSelf().SingleInstance();
+            )).AsSelf().InstancePerRequest();
 
             builder.Register(c =>
             {
